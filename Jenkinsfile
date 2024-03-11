@@ -7,14 +7,14 @@ pipeline {
 				sh 'g++ main/hello.cpp -o output'
 			}
 		}
-		stage('Test' {
+		stage('Test') {
 			steps {
 				sh './output'
 			}
 		}
 		stage('Deploy') {
 			steps {
-				echo 'deploy'
+				sg "./hghhhh"
 			}
 		}
 	}
